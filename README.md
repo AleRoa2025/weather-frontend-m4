@@ -4,6 +4,7 @@ Versión: Febrero 2026
 Autora: Alejandra Roa Peña
 
 Descripción
+
 Aplicación web de clima internacional desarrollada como MVP académico en el curso Desarrollo Web Front End Trainee (SENCE – Talento Digital). Presenta información climática de diez capitales del mundo de forma clara, accesible y visualmente organizada.
 En esta etapa se integran contenidos de JavaScript Avanzado del Modulo IV, manteniendo la metodología BEM y la arquitectura Sass 7-1.
 
