@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .fa-sun {
   color: #fbbc05;
   font-size: medium;
@@ -237,14 +236,8 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
-.flip-card {
-  /* 🔁 ACTIVA EL GIRO */
-}
 .flip-card--active .flip-card__inner {
   transform: rotateY(180deg);
-}
-.flip-card {
-  /* ===== CARAS ===== */
 }
 .flip-card__front, .flip-card__back {
   position: absolute;
@@ -313,9 +306,6 @@ body {
   text-transform: capitalize;
   margin-bottom: 6px;
 }
-.flip-card {
-  /* 📅 PRONÓSTICO HORIZONTAL */
-}
 .flip-card__semana {
   display: flex;
   justify-content: space-between;
@@ -324,9 +314,6 @@ body {
 }
 .flip-card .dia {
   text-align: center;
-}
-.flip-card {
-  /* 🔘 BOTÓN DETALLES */
 }
 .flip-card .btn-detalles {
   margin-top: auto;
@@ -392,7 +379,6 @@ body {
   box-shadow: 0 6px 20px rgba(253, 160, 133, 0.6);
 }
 
-/* 🔥 EVITA QUE EL 3D DE LAS CARDS TAPE EL MODAL */
 .modal-clima {
   position: fixed;
   inset: 0;
@@ -413,7 +399,6 @@ body {
   border-radius: 18px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
   animation: zoom 0.3s ease;
-  /* 🔥 Saca el modal del contexto 3D */
   transform: translateZ(0);
 }
 .modal-clima__titulo {

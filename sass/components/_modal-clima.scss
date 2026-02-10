@@ -1,9 +1,6 @@
 @use '../utilities/variables' as *;
 
 
-/* 🔥 EVITA QUE EL 3D DE LAS CARDS TAPE EL MODAL */
-
-
 .modal-clima {
   position: fixed;
   inset: 0;
@@ -27,7 +24,7 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
     animation: zoom .3s ease;
 
-    /* 🔥 Saca el modal del contexto 3D */
+  
     transform: translateZ(0);
   }
 

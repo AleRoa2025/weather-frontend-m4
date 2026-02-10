@@ -4,9 +4,9 @@
   background-color: #fdf8f5;
   padding: 0.5rem 1rem;
   position: relative;
-  min-height: 70px; // Evita que el nav colapse demasiado
+  min-height: 70px; 
   display: flex !important;
-  justify-content: space-between; // Logo a la izquierda, menú a la derecha
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
   padding: 1rem 5%;
@@ -57,16 +57,14 @@
     }
   }
 
- 
-
   &__logo {
     position: relative;
-    width: 110px; // Espacio reservado
-    z-index: 1050; // Por encima de la navegación colapsada
+    width: 110px; 
+    z-index: 1050; 
 
     .navbar__image {
       position: absolute;
-      top: -20px; // Notebook: un poco salido
+      top: -20px; 
       left: 0;
       width: 100px;
       height: 100px;
@@ -75,28 +73,28 @@
       padding: 5px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       
-      // --- RESPONSIVE MÓVIL ---
+   
       @media (max-width: 767px) {
-        width: 75px;  // Reducimos tamaño
+        width: 75px; 
         height: 75px;
-        top: -10px;   // En móvil sube menos para no cortarse
+        top: -10px;   
         left: 5px;
       }
     }
   }
 
-  // Estilo para el botón hamburguesa
+
   .navbar-toggler {
     border: none;
     padding: 0.5rem;
     &:focus { box-shadow: none; }
   }
 
-  // Ajuste del menú desplegado en móvil
+ 
   @media (max-width: 767px) {
     .navbar-collapse {
       background-color: #fdf8f5;
-      margin-top: 45px; // Espacio para que no tape al logo
+      margin-top: 45px; 
       padding: 1rem;
       border-radius: 10px;
       text-align: center;

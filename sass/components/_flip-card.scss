@@ -19,12 +19,12 @@
     transition: transform .7s cubic-bezier(.4,.2,.2,1);
   }
 
-  /* 🔁 ACTIVA EL GIRO */
+ 
   &--active &__inner {
     transform: rotateY(180deg);
   }
 
-  /* ===== CARAS ===== */
+ 
   &__front,
   &__back {
     position: absolute;
@@ -91,7 +91,6 @@
     margin-bottom: 6px;
   }
 
-  /* 📅 PRONÓSTICO HORIZONTAL */
   &__semana {
     display: flex;
     justify-content: space-between;
@@ -103,7 +102,7 @@
     text-align: center;
   }
 
-  /* 🔘 BOTÓN DETALLES */
+
   .btn-detalles {
     margin-top: auto;
     background: white;
