@@ -5,34 +5,41 @@ Autora: Alejandra Roa Peña
 
 Descripción
 
-Aplicación web de clima internacional desarrollada como MVP académico en el curso Desarrollo Web Front End Trainee (SENCE – Talento Digital). Presenta información climática de diez capitales del mundo de forma clara, accesible y visualmente organizada.
-En esta etapa se integran contenidos de JavaScript Avanzado del Modulo IV, manteniendo la metodología BEM y la arquitectura Sass 7-1.
+Proyecto de Aplicación web de clima internacional desarrollada como MVP académico en el curso Desarrollo Web Front End Trainee (SENCE – Talento Digital). 
+Presenta información climática de diez capitales del mundo de forma clara, accesible y visualmente organizada. 
+Las ciudades fueron seleccionadas considerando:
 
-Los datos climáticos son ficticios y el proyecto no consume APIs externas en esta fase.
+- Alto interés de estudiantes chilenos para estudios de postgrado
+- Países con alto Índice de Felicidad
+- 
+En esta etapa se integran contenidos del Modulo IV "Fundamentos de Programación en Javascript", manteniendo la metodología BEM y la arquitectura Sass 7-1.
+
+¡Importante: Los datos climáticos son ficticios y el proyecto no consume APIs externas en esta fase.!
 
 Público objetivo
+
+
 Diseñada con foco en personas adultas mayores y usuarios que priorizan:
-
 Alta legibilidad
-
 Claridad visual
-
 Navegación simple e intuitiva
-
 Estructura de la aplicación
 
 Sección	Funcionalidad
-Home	Tarjetas interactivas tipo flip-card con temperatura actual y acceso a pronóstico semanal y estadísticas.
-Acerca de	Contexto del proyecto, objetivos académicos y tecnologías utilizadas.
-Contacto	Formulario interactivo con respuesta personalizada mediante JavaScript.
+
+* Home:	Tarjetas interactivas tipo flip-card con temperatura actual y acceso a pronóstico semanal y estadísticas. Con distinción de color según estado climático.
+* Acerca de	:Contexto del proyecto, objetivos académicos y tecnologías utilizadas.
+* Contacto	:Formulario interactivo con respuesta personalizada mediante JavaScript.
 
 Arquitectura técnica
 
-Metodología BEM
+-Metodología BEM
+
 Organización de clases CSS bajo el modelo Block–Element–Modifier, favoreciendo escalabilidad, legibilidad y control de estilos.
 
-Sass (SCSS) – Patrón 7-1
+-Sass (SCSS) – Patrón 7-1
 
+```
 scss/
 │
 ├── base/
@@ -67,6 +74,7 @@ scss/
 │   └── _home.scss
 │
 └── main.scss
+```
 
 
 
@@ -84,7 +92,9 @@ JavaScript (ES6)
 
 Font Awesome
 
+
 Objetivo académico
+
 
 Aplicar buenas prácticas de desarrollo front-end, arquitectura de estilos profesional y uso de JavaScript avanzado para la creación dinámica de componentes e interacción con el DOM.
 
