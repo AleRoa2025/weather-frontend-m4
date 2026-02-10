@@ -1,15 +1,15 @@
 @use '../utilities/variables' as *;
 
-// En tu archivo SCSS
+
  .btn-ver-mas {
   background: linear-gradient(135deg, #ff9a9e 0%, #fda085 100%);
-  color: white !important; // El important asegura que Bootstrap no lo ponga azul/negro
+  color: white !important; 
   border: none;
   padding: 12px 30px;
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
-  display: inline-flex; // Para alinear bien el texto y el icono
+  display: inline-flex; 
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
@@ -19,7 +19,7 @@
     transform: translateY(-1px);
   }
    &.hidden {
-    display: none; // Se ocultará cuando no haya más cards que mostrar
+    display: none; 
   }
 
   &:hover {

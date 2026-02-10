@@ -8,8 +8,7 @@
   height: 45px;
   border-radius: 50%;
   border: none;
-  background-color: #440a2a;
-  color: white;
+  background-color:  #ff9a9e;
   display: none;
   align-items: center;
   justify-content: center;
@@ -24,6 +23,6 @@
     }
 
     &--active {
-      color: #440a2a;
+      color:  #ff9a9e;
     }
 }

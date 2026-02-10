@@ -351,8 +351,7 @@ body {
   height: 45px;
   border-radius: 50%;
   border: none;
-  background-color: #440a2a;
-  color: white;
+  background-color: #ff9a9e;
   display: none;
   align-items: center;
   justify-content: center;
@@ -365,7 +364,7 @@ body {
   background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
 }
 .btn-top--active {
-  color: #440a2a;
+  color: #ff9a9e;
 }
 
 .btn-ver-mas {
@@ -520,6 +519,7 @@ body {
 .about {
   background-color: #f5efe6;
   padding: 3rem 1rem;
+  margin-top: 4rem;
 }
 .about__container {
   max-width: 900px;
@@ -560,6 +560,7 @@ body {
 .contact {
   background-color: #f5efe6;
   padding: 3rem 1rem;
+  margin-top: 4rem;
 }
 .contact__container {
   max-width: 700px;
