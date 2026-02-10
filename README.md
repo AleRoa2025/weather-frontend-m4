@@ -1,115 +1,73 @@
- App Clima Internacional – MVP
+App Clima Internacional – MVP
+Version Febrero 2026- Por Alejandra Roa Peña
 
-**App Clima · 2da versión – Enero 2026**
-**Autora:** Alejandra Roa Peña
+ Descripción del proyecto
+Esta aplicación es la tercera entrega (MVP) de una App Web de Clima Internacional. Su objetivo es presentar información climática de diez capitales mundiales de manera simple, clara y accesible.
 
----
+En esta versión se incorporó lo aprendido en Modulo IV del Curso Desarrollo Web Front End Trainee, de Sence/Talento Digital, sobre JavaScritp Avanzado, manteniendo metodología BEM y utilizando preprocesador SASS incorporado en entrega anterior.
 
-1. Descripción del proyecto
+ Selección de ciudades
+Las ciudades fueron elegidas bajo dos criterios principales:
+1.  **Educación:** Alto interés de estudiantes chilenos para estudios de postgrado.
+2.  **Bienestar:** Países con alto Índice de Felicidad.
 
-Esta aplicación corresponde a la segunda versión (MVP) de una App Web de Clima Internacional, cuyo objetivo es presentar información climática de manera simple, clara y accesible sobre diez capitales del mundo.
-
-En esta versión se mantiene el diseño general presentado en la primera entrega; sin embargo, se incorporan mejoras a nivel de organización y modularización del código CSS, aplicando la metodología BEM y el uso
-del preprocesador Sass, con el fin de optimizar la mantenibilidad y escalabilidad del proyecto.
-
-Las ciudades fueron seleccionadas considerando:
-
-* Alto interés de estudiantes chilenos para estudios de postgrado
-* Países con alto Índice de Felicidad
-
-Los datos climáticos presentados son **ficticios**, ya que el proyecto tiene un **enfoque formativo y demostrativo**, orientado a la práctica de los contenidos aprendidos hasta el **Módulo 3** del curso, **sin consumo de APIs externas**.
-
----
-2. Publico objetivo
-
-La aplicación está orientada principalmente a:
-
-* Personas adultas mayores
-* Usuarios que requieren información clara y rápida
-
-Por este motivo, el diseño prioriza:
-
-* Alta legibilidad
-* Claridad visual
-* Navegación intuitiva
-* Estructura simple y ordenada
+> [!IMPORTANT]  
+> Los datos climáticos presentados son **ficticios**, ya que el proyecto tiene un enfoque formativo (Módulo 4) y no consume APIs externas en esta etapa.
 
 ---
 
-3. Estructura de la Aplicación
-   *Home
-Muestra tarjetas con las capitales seleccionadas, incluyendo animaciones simples y contenido resumido.
-
-   * About
-
-Presenta el contexto del proyecto, su objetivo académico, público objetivo y tecnologías utilizadas.
-
-   * Pronostico Semanal
-
-Despliega una proyección climática simulada, organizada en una tabla clara y comprensible.
-
-En estas secciones se utiliza **JavaScript externo** para implementar la funcionalidad del botón **“volver arriba”**.
-
-   * Contacto
-
-Formulario interactivo que utiliza **JavaScript interno**, mostrando un mensaje de agradecimiento personalizado al enviar el formulario.
+ Público objetivo
+El diseño está optimizado para **personas adultas mayores** y usuarios que buscan rapidez, priorizando:
+Alta legibilidad.
+Claridad visual y navegación intuitiva.
+Estructura simple y ordenada.
 
 ---
 
-4.  Metodología BEM aplicada
+ Estructura de la Aplicación
+* **Home:** Tarjetas que giran (flip-card) de 10 ciudades, con informacion de Temp° Actual en Reverso, más boton ver detalles, donde se puede apreciar Pronostico Semanal, mas estadisticas.
+* ** Acerca de:** Contexto del proyecto, objetivos académicos y tecnologías.
+* **Contacto:** Formulario interactivo con mensaje de agradecimiento personalizado (JavaScript interno).
 
-El proyecto utiliza la metodología **BEM (Block, Element, Modifier)** para la nomenclatura de clases CSS, lo que permite:
+ Arquitectura Técnica
 
-* Código más legible y mantenible
-* Evitar colisiones de estilos
-* Facilitar la escalabilidad del proyecto
-  
----
-5. Uso de Sass (SCSS) – Patrón 7-1
+### Metodología BEM
+Se utilizó la nomenclatura **Block, Element, Modifier** para las clases CSS, garantizando un código legible, sin colisiones de estilos y fácil de escalar.
 
-Los estilos están desarrollados utilizando **Sass (SCSS)** siguiendo la **arquitectura 7-1**, una buena práctica para organizar proyectos front-end.
+### Sass (SCSS) – Patrón 7-1
+Los estilos se organizaron siguiendo la arquitectura 7-1 para una gestión profesional de archivos:
+
 scss/
+├── base/        # _base.scss, _reset.scss, _typo.scss..
+├── components/  # _btn-top.scss, _flip-card.scss, _navbar.scss..
+├── layout/      # _footer.scss, _grid.scss, _header.scss..
+├── themes/      # _default.scss..
+├── utilities/   # _functions.scss, _mixins.scss, _variables.scss..
+├── vendors/     # _bootstrap-overrides.scss..
+├── views/       # _about.scss, _contact.scss, _home.scss..
+└── main.scss    # Archivo principal que importa todos los parciales
 
-├── base/            _base, _reset, _typo
-├── components/      _btn-top, _flip-card, _navbar
-├── layout/          _footer, _grid,_header
-├── themes/          _default
-├── utilities/       _functions, _mixins, _variables
-├── vendors/         _bootstrap-overrides
-├── views/          _about,_contact,_forecast,_home
-└── main.scss      Archivo principal
+Tecnologías Utilizadas
 
-El archivo `main.scss` importa todos los parciales y se compila en un único archivo CSS utilizado por la aplicación
+HTML5: Estructura semántica.
+CSS3 / Sass (SCSS): Estilos avanzados y arquitectura 7-1.
+BEM: Metodología de organización de clases.
+Bootstrap 5: Diseño responsivo y ágil.
+JavaScript: Interactividad a traves de manejo de eventos y funciones.
+Font Awesome: Iconografía climática.
 
-6. Tecnologías utilizadas
-   HTML5:  estructura semántica
-   CSS3 / Sass (SCSS):estilos personalizados y arquitectura 7-1
-   Metodología BEM:** organización de clases CSS
-   Bootstrap 5:** diseño responsivo
-   JavaScript:** interactividad y manejo de eventos
-   Font Awesome:** íconos climáticos
----
+Objetivo Académico
 
-7.  Objetivo académico
+Buenas prácticas de desarrollo front-end.
+Uso de metodologías modernas (BEM + Sass).
+Uso Javascript avanzado (creacion de las tarjetas, funciones, eventos, arreglos y ciclos)
 
-El objetivo principal del proyecto es aplicar los conocimientos adquiridos en el **Curso Front End Trainee 2.0**, Modulo 3, impartido por **Talento Digital para Chile / SENCE**, reforzando:
+Proyección del Proyecto
+Esta maqueta de portafolio evolucionará en los siguientes módulos, incorporando:
+Consumo de APIs de clima en tiempo real.
+Nuevas funcionalidades y optimización visual.
 
-* Buenas prácticas de desarrollo front-end
-* Uso de metodologías modernas (BEM + Sass)
-* Diseño centrado en el usuario
 
----
-
-8.  Proyección del proyecto
-
-Esta aplicación forma parte de una **maqueta de portafolio académico**, la cual será ampliada progresivamente en los siguientes módulos del curso, incorporando:
-
-* Consumo de APIs reales
-* Mejora de accesibilidad
-* Nuevas funcionalidades
-* Optimización visual
-
----
 
 ** Estado del proyecto
 
