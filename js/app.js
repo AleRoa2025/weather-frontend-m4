@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const lugar = lugares.find(l => l.id === id);
         if (!lugar) return;
 
-        modalTitulo.textContent = `Pronóstico en ${lugar.nombre}`;
+        modalTitulo.textContent = `Pronóstico Semanal en ${lugar.nombre}`;
         modalDias.innerHTML = lugar.pronosticoSemanal.map(dia => `
             <div class="modal-clima__dia">
                 <strong>${dia.dia}</strong><br>
